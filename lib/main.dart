@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ValueListenableBuilder(
           valueListenable: rotate,
           child: _triangleShape(),
-          builder: <dynamic>(context, n, c) {
+          builder: (context, n, c) {
             return Transform.rotate(
               angle: (n! * (pi / 180)),
               child: c,
